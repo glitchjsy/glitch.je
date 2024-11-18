@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="luke@glitch.je">
+    <meta name="description" content="Basket.je - Luke's Portfolio Site">
+    <meta name="keywords" content="Portfolio">
+    <meta name="robots" content="index,follow">
+
+    <title>Basket.je - Luke's Portfolio</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B5C9T86GC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7B5C9T86GC');
+    </script>
+
+    <style>
+        #deep-dive {
+            margin-top: 50px;
+        }
+
+        #deep-dive h3 {
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        #deep-dive h4 {
+            padding-top: 10px;
+        }
+
+        #deep-dive p {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        #feature-list {
+            margin-left: 30px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        #img-1 {
+            width: 400px;
+        }
+
+        #img-2 {
+            width: 400px
+        }
+
+        #img-3 {
+            width: 650px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #deep-dive p {
+                font-size: 14px;
+            }
+
+            #deep-dive #img-1 {
+                width: 300px;
+            }
+
+            #deep-dive #img-2 {
+                width: 300px;
+            }
+
+            #deep-dive #img-3 {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="project-navbar">
+            <div class="navbar-container">
+                <a href="/" class="navbar-head-back">
+                    <img src="/images/logos/back.jpg" class="tool-icon"> Head back home
+                </a>
+            </div>
+        </div>
+        <div class="about-section">
+            <div class="container">
+                <h2 class="about-title">Basket.je</h2>
+
+                <div class="tags" style="margin-bottom: 20px">
+                    <a href="https://basket.je" class="tag color-blue">Website <img
+                            src="/images/logos/external-link.svg" class="tool-icon"></a>
+                    <div class="tag color-red">Closed source</div>
+                    <div class="tag color-green">Active</div>
+                </div>
+
+                <p>
+                    Basket.je is a price comparison website that I built from scratch.
+                </p>
+                <p>
+                    It's purpose is to aid consumers in saving money by making it easy to compare grocery prices across
+                    various local retailers. To make this possible, I created a system for effortlessly collectng prices
+                    using your smartphone while in the shop. I have also developed a native app using React Native that
+                    is
+                    yet to be released.
+                </p>
+
+                <div class="card" style="background-color: #e6e6e6;">
+                    <h3>Tools used</h3>
+                    <div class="project-tools-used">
+                        <div><img src="/images/logos/typescript.png" class="tool-icon"> TypeScript</div>
+                        <div><img src="/images/logos/html5.png" class="tool-icon"> HTML</div>
+                        <div><img src="/images/logos/css3.png" class="tool-icon"> CSS</div>
+                        <div><img src="/images/logos/react.png" class="tool-icon"> React.js</div>
+                        <div><img src="/images/logos/nextjs.png" class="tool-icon"> Next.js</div>
+                        <div><img src="/images/logos/react-native.svg" class="tool-icon"> React Native</div>
+                        <div><img src="/images/logos/mysql.png" class="tool-icon"> MySQL</div>
+                        <div><img src="/images/logos/nodejs.png" class="tool-icon"> Node.js</div>
+                        <div><img src="/images/logos/nginx.svg" class="tool-icon"> Nginx</div>
+                        <div><img src="/images/logos/redis.svg" class="tool-icon"> Redis</div>
+                        <div><img src="/images/logos/vscode.png" class="tool-icon"> Visual Studio Code</div>
+                        <div><img src="/images/logos/git.png" class="tool-icon"> Git</div>
+                    </div>
+                </div>
+
+                <div id="deep-dive">
+                    <h3>The story</h3>
+
+                    <!------ Starting out ------>
+                    <h4>1. Starting out</h4>
+                    <p>
+                        I decided to start the project because I wasn't happy with the (now-defunct) PriceComparison.je
+                        website. It lacked a lot of features, compared to a UK alternative such as <a
+                            href="https://trolley.co.uk">Trolley.co.uk</a>,
+                        and I wanted to do better for the island.
+                    </p>
+                    <p>
+                        I started by tacking the issue of price collection. As we all know, online grocery shopping is
+                        virtually non existant in Jersey, save for Co-op and Orderit, so web scraping was out of the
+                        question.
+                    </p>
+                    <p>
+                        I had contacted a few retailers asking about obtaining the necessary price information, but did
+                        not receive a reply. I decided the best way forward would be to develop an efficient solution of
+                        collecting
+                        prices on foot. I begun developing a mobile app using React Native, but quickly realised this
+                        wasn't the most effective solution and pivoted towards a web based app.
+                    </p>
+                    <p>
+                        I spent a month or two developing and improving the site, adding new functionality and fixing
+                        issues. It was then I got contacted by a UK company who was looking to do the same thing as I.
+                        As I had already
+                        completed a large chunk of the work myself, they offered a partnership. I accepted.
+                    </p>
+
+                    <!------ Partnership ------>
+                    <h4>2. Partership</h4>
+                    <p>
+                        We worked together for a few months. I would develop the site and they would work on the
+                        business side of things, however it never really went anywhere, due to them being based in the
+                        UK and I being the sole person working on things over here. Thus, we decided to part ways.
+                    </p>
+                    <p>
+                        I'm very greatful for their initial interest and continuous support, I probably wouldn't have
+                        continued working on Basket.je if it wasn't for them.
+                    </p>
+
+                    <!------ Current state of affairs ------>
+                    <h4>3. Current state of affairs</h4>
+                    <p>
+                        Nowadays, I don't really update the site. I haven't got the time to do this alone and would need at least 1-2 other people to help.
+                    </p>
+                    <p>
+                        As previously mentioned, PriceComparison.je was shut down, but it has been replaced with <a href="https://prices.je">Prices.je</a>.
+                        Still not great. I have offered the site to the Jersey Consumer Council for free, but they are committed to Prices.je.
+                    </p>
+                    <p>
+                        If you think you could help in some way, email me at <a href="mailto:luke@glitch.je">luke@glitch.je</a>!
+                    </p>
+                </div>
+
+                <div id="deep-dive">
+                    <h3>Behind the scenes</h3>
+                    <p>
+                        Here is the page I used to update prices (Yes, it needs some styling improvements):
+                    </p>
+                    <img id="img-1" src="/images/projects/basketje/price-updater-1.png">
+                    <p>Also, at the top of the page there is more options available, such as:</p>
+                    <ul id="feature-list">
+                        <li>Showing links to the product page (used for co-op so prices can be checked at a PC)</li>
+                        <li>Show the product ID (used for testing mostly)</li>
+                        <li>Choose which aisles you want to see</li>
+                    </ul>
+
+                    <p>Click on a product to see the below:</p>
+                    <img id="img-2" src="/images/projects/basketje/price-updater-2.png">
+
+                    <p>When I'm done, I'll hit submit at the top and select the location I was at (e.g. Iceland Parade).
+                        Later, when we're at a PC, we find the request we just submitted:</p>
+                    <img id="img-3" src="/images/projects/basketje/price-updater-3.png">
+                    <p>(Again, could do with some styling improvements - this is probably one of the oldest pages on the
+                        site)</p>
+                    <p>Here we can download the data as a spreadsheet and make the necessary checks and changes before
+                        re-uploading and making the data live on the site.</p>
+                </div>
+
+                <div id="deep-dive">
+                    <h3 style="margin-top: 30px">Full feature list</h3>
+                    <ul id="feature-list">
+                        <li>Compare prices from 7 retailers</li>
+                        <li>Track price history over time (currently disabled)</li>
+                        <li>View price history</li>
+                        <li>See different sizes of a product and the price per unit</li>
+                        <li>See cheaper own-brand alternatives of a name-brand product</li>
+                        <li>View all products for a generic item (e.g. Tomato Pasta Sauce - <a
+                                href="https://basket.je/explore/tomato-pasta-sauce">example link</a>)</li>
+                        <li>Add products to one or multiple shopping lists</li>
+                        <li>Share your shopping lists with others!</li>
+                        <li>Create an account to be able to see your recently viewed products</li>
+                        <li>See products recently added to the site in the past month on the home page</li>
+                        <li>Click on a shop and see products that are sold there and every location in the island</li>
+                        <li>When sharing a product, an image with the basic details is auto generated (<a
+                                href="https://storage.googleapis.com/cdn.basket.je/products-share/5029053578200.png?v=1731967383115">example</a>)
+                        </li>
+                        <li>Is a price wrong? Report the product, select Incorrect Price and fill out the form!</li>
+                        <li>...possibly more things that I can't think of right now</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
