@@ -84,6 +84,7 @@ h2 {
 .tags {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -236,6 +237,31 @@ h2 {
 .tool-icon {
     height: 18px;
     width: 18px;
+}
+
+.old-projects {
+    color: white;
+    margin-top: 30px;
+}
+
+.old-projects h3 {
+    font-size: 26px;
+}
+
+.old-projects .project-card {
+    height: 70px;
+}
+
+.old-projects .project-card img {
+    height: 70px;
+}
+
+.old-projects .project-view-more {
+    height: 70px;
+}
+
+#old-projects-explained {
+    margin-bottom: 16px;
 }
 
 @media screen and (max-width: 768px) {

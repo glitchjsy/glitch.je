@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="luke@glitch.je">
+    <meta name="description" content="InfinityGames - Luke's Portfolio Site">
+    <meta name="keywords" content="Portfolio">
+    <meta name="robots" content="index,follow">
+
+    <title>InfinityGames - Luke's Portfolio</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B5C9T86GC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7B5C9T86GC');
+    </script>
+    
+    <style>
+        #read-more {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        #submodules {
+            width: 630px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #submodules {
+                width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="project-navbar">
+            <div class="navbar-container">
+                <a href="/" class="navbar-head-back">
+                    <img src="/images/logos/back.jpg" class="tool-icon"> Head back home
+                </a>
+            </div>
+        </div>
+        <div class="about-section">
+            <div class="container">
+                <h2 class="about-title">InfinityGames</h2>
+
+                <div class="tags" style="margin-bottom: 20px">
+                    <div class="tag color-blue">Minecraft Server Network</div>
+                    <div class="tag color-red">Closed source</div>
+                    <div class="tag color-red">Discontinued</div>
+                </div>
+
+                <p>
+                    I developed an entire Minecraft server network over the course of 2 years and multiple rewrites. The project is developed with Maven with multiple submodules:
+                </p>
+
+                <img id="submodules" src="/images/projects/infinitygames/submodules.png">
+
+                <p>I'll go into more detail in the future.</p>
+
+                <div class="card" style="background-color: #e6e6e6;">
+                    <h3>Tools used</h3>
+                    <div class="project-tools-used">
+                        <div><img src="/images/logos/java.png" class="tool-icon"> Java</div>
+                        <div><img src="/images/logos/minecraft.png" class="tool-icon"> Minecraft</div>
+                        <div><img src="/images/logos/discordjs.png" class="tool-icon"> Discord.js</div>
+                        <div><img src="/images/logos/expressjs.png" class="tool-icon"> Express.js</div>
+                        <div><img src="/images/logos/mongo.png" class="tool-icon"> MongoDB</div>
+                        <div><img src="/images/logos/redis.svg" class="tool-icon"> Redis</div>
+                        <div><img src="/images/logos/idea.png" class="tool-icon"> IntelliJ IDEA</div>
+                        <div><img src="/images/logos/vscode.png" class="tool-icon"> Visual Studio Code</div>
+                        <div><img src="/images/logos/typescript.png" class="tool-icon"> TypeScript</div>
+                        <div><img src="/images/logos/html5.png" class="tool-icon"> HTML</div>
+                        <div><img src="/images/logos/maven.jpeg" class="tool-icon"> Maven</div>
+                        <div><img src="/images/logos/git.png" class="tool-icon"> Git</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
