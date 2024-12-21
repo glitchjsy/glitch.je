@@ -176,6 +176,55 @@ h2 {
     opacity: 1;
 }
 
+.design-section {
+    background-color: white;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.design-title {
+    color: black;
+    margin-bottom: 16px;
+}
+
+.design-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.design-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.design-grid-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.design-grid-column img, .design-grid-column video {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .design-grid-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .design-grid-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
 .bio {
     color: white;
     font-size: 30px;
@@ -262,6 +311,12 @@ h2 {
 
 #old-projects-explained {
     margin-bottom: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 768px) {
