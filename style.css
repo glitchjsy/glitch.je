@@ -179,6 +179,7 @@ h2 {
 }
 
 .design-section {
+    display: none; /* TODO: Remove */
     background-color: white;
     color: black;
     padding-top: 20px;
