@@ -1,0 +1,52 @@
+.header {
+    background-image: url(/images/dreaming-trees.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.announcementBar {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 30px 62px;
+}
+
+.smallContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px 5px !important;
+}
+
+.name {
+    font-size: 60px;
+}
+
+.bio {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 45px;
+    }
+
+    .bio {
+        font-size: 18px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .header {
+        background-image: url(/images/dreaming-trees-2.png);
+    }
+}

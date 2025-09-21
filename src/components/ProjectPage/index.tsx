@@ -1,6 +1,8 @@
 import { PropsWithChildren, useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import clsx from "@/clsx";
+import Footer from "../Footer";
+import Header from "../Header";
 
 type ProjectCategory = "Website" | "Console Application" | "Minecraft Server Plugin" | "Java Library" | "Java Program" | "Chrome Extension" | string;
 
@@ -140,10 +142,10 @@ export default function ProjectPage({ children, ...props }: PropsWithChildren<Pr
     const isMobile = useIsMobile();
 
     return (
-        <div className="main">
-            {/* Navbar */}
+        <div className={styles.main}>
+            <Header />
 
-            <div className="container">
+            <div className={clsx("container", styles.content)}>
                 <div className={styles.pageGrid}>
                     {isMobile ? (
                         <div>
@@ -171,6 +173,8 @@ export default function ProjectPage({ children, ...props }: PropsWithChildren<Pr
                     )}
                 </div>
             </div>
+
+            <Footer smallContainer />
         </div>
     )
 }

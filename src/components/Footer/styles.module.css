@@ -6,14 +6,23 @@
 
 .grayBar {
     background-color: #ececec;
-    padding: 5px 62px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .container {
     padding: 10px 62px;
+}
+
+.grayBar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 62px;
+}
+
+.smallContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 0 !important;
 }
 
 .title {
@@ -26,6 +35,8 @@
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
+    text-decoration: none;
+    color: white;
     position: relative;
     text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
         0.025em 0.04em 0 #fffc00;
@@ -36,6 +47,10 @@
     .container {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .title {
+        text-align: center;
     }
 
     .grayBar {
