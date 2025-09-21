@@ -170,13 +170,18 @@ export default function Index() {
                     <div className={styles.container}>
                         <h2 className="design-title">Designs</h2>
                         <p className="design-subtitle">
-                            I'm not a professional designer, but I'm proud of these designs and wanted to share them. I created them for <a href="https://facebook.com/StJamesSportsBar" target="_blank">St James</a> and <a href="https://facebook.com/TheMaryRoseJersey" target="_blank">The Mary Rose</a> to be used as posters, social media posts, and on-screen adverts.
+                            I'm not a professional designer, but I'm proud of these designs and wanted to share them.
+                        </p>
+                        <p className="design-subtitle">
+                            I created them for <a href="https://facebook.com/StJamesSportsBar" target="_blank">St James</a> and <a href="https://facebook.com/TheMaryRoseJersey" target="_blank">The Mary Rose</a> to be used as posters, social media posts, and on-screen adverts.
                             I continue to create new adverts each week for social media.
                         </p>
 
                         <h3 className={styles.gallerySubheading}>St James</h3>
-                        <ImageGallery imagesInfoArray={jimmiesDesigns} />
-
+                        <div className={styles.jimmiesGallery}>
+                            <ImageGallery imagesInfoArray={jimmiesDesigns} />
+                        </div>
+                        
                         <h3 className={styles.gallerySubheading}>The Mary Rose</h3>
                         <div className={styles.maryRoseGallery}>
                             <ImageGallery imagesInfoArray={maryRoseDesigns} />
