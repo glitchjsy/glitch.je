@@ -1,0 +1,51 @@
+.project {
+    width: 300px;
+    height: 122px;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.viewMore {
+    position: absolute;
+    width: 300px;
+    height: 122px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: linear 0.1s;
+}
+
+.viewMore:hover {
+    opacity: 1;
+}
+
+.title {
+    color: white;
+    justify-self: center;
+    font-size: 20px;
+    display: none;
+}
+
+.image {
+    width: 300px;
+    height: 122px;
+}
+
+.smaller {
+    height: 70px;
+}
+
+.smaller .image {
+    height: 70px;
+}
+
+.smaller .viewMore {
+    height: 70px;
+}

@@ -1,0 +1,153 @@
+.pageGrid {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    gap: 20px;
+}
+
+.moreInfo {
+    font-weight: 600;
+    font-size: 22px !important;
+}
+
+.aboutSectpageGridion p {
+    font-size: 20px;
+}
+
+.pageGrid p:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.pageTitle {
+    color: black;
+    margin-bottom: 25px;
+}
+
+.pageGrid h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.tag {
+    font-size: 0.875rem;
+}
+
+.tagLabel {
+    padding: 4px 8px;
+    font-weight: 600;
+}
+
+.tagValue {
+    padding: 4px 8px;
+}
+
+.sidebar {
+    background-color: oklch(.968 .007 247.896);
+    padding: 20px 26px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.sidebar > div:not(:last-child) {
+    border-bottom: 1px solid oklch(.929 .013 255.508); 
+    padding-bottom: 10px;   
+    margin-bottom: 10px;  
+}
+
+.desktopHeader {
+    margin-bottom: 30px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #ececec;
+}
+
+.deskopHeaderFlex {
+    display: flex;
+}
+
+.pageSummaryMobile {
+    text-align: center;
+}
+
+.projectDetailsTitle {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.projectDetailsRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectDetailsHeading {
+    font-weight: 600;
+    font-size: 16px !important;
+    padding-bottom: 4px;
+}
+
+.projectDetailsValue {
+    font-weight: 400;
+    font-size: 14px !important;
+}
+
+.projectLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectLinks a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.projectLinks a:hover {
+    color: red;
+}
+
+.techFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 5px;
+}
+
+.techBadge {
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+}
+
+.projectContent ul li {
+    padding-bottom: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+
+    .projectContent {
+        text-align: center;
+    }
+
+    .projectContent ul {
+        text-align: left;
+    }
+
+    .projectContent ul li {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-bottom: 1px solid #ececec;
+    }
+}
