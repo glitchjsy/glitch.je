@@ -9,7 +9,7 @@ interface Props {
 
 export default function ProjectCard(props: Props) {
     return (
-        <a href={props.url} target="_blank" className={`${styles.project} ${props.smaller ? styles.smaller : ""}`}>
+        <a href={props.url} className={`${styles.project} ${props.smaller ? styles.smaller : ""}`}>
             <div className={styles.viewMore}>
                 <p>Click to view more</p>
             </div>
