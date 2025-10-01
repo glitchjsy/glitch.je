@@ -6,7 +6,7 @@ export default function ProjectStJamesAdmin() {
             name="St James TV System"
             category="Website & Android App"
             status="Active"
-            summary="Effortlessly copy & paste between multiple devices."
+            summary=""
             created="December 2024"
             technologies={[
                 "java",

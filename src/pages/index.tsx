@@ -45,6 +45,8 @@ export default function Index() {
                 <div className="projects-section">
                     <div className={styles.container}>
                         <h2 className="projects-title">Projects</h2>
+                        <h3 className={styles.projectCategoryHeading}>Websites</h3>
+
                         <div className="projects-grid">
                             <ProjectCard
                                 name="Basket.je"
@@ -87,27 +89,37 @@ export default function Index() {
                                 imageUrl="/imagesold/projects/savethefort.png"
                             />
                             <ProjectCard
-                                name="Excise Duty Calculator"
-                                url="/projects/duty-calculator"
-                                imageUrl="/imagesold/projects/dutycalc.png"
-                            />
-                            <ProjectCard
                                 name="QR Code Generator"
                                 url="/projects/qrcode"
                                 imageUrl="/imagesold/projects/qrcode.png"
                             />
-                            <ProjectCard
-                                name="Andium Properties Checker"
-                                url="/projects/andium-checker"
-                                imageUrl="/imagesold/projects/andiumcheck.png"
-                            />
                         </div>
 
-                        <div className="old-projects">
-                            <h3 className="old-mc-projects-title">Old Minecraft Projects</h3>
-                            <p id="old-projects-explained">I learned programming by developing for Minecraft when I was younger. Here are some of the things I created, most of them are discontinued and they are all coded in Java.</p>
+                        {/* <div className="old-projects">
+                            <h3 className={styles.projectCategoryHeading}>Miscellaneous (open source)</h3>
+                            <p className={styles.projectCategorySummary}>These are Chrome Extensions, Scripts or Console Applications that I've created.</p>
 
                             <div className="projects-grid">
+                                <ProjectCard
+                                    name="Excise Duty Calculator"
+                                    url="/projects/duty-calculator"
+                                    imageUrl="/images/projects/dutycalc/home.png"
+                                    smaller
+                                />
+                                <ProjectCard
+                                    name="Andium Properties Checker"
+                                    url="/projects/andium-checker"
+                                    imageUrl="/images/projects/andium-checker/home.png"
+                                    smaller
+                                />
+                            </div>
+                        </div> */}
+
+                        <div className="old-projects">
+                            <h3 className={styles.projectCategoryHeading}>Old Minecraft Projects</h3>
+                            <p className={styles.projectCategorySummary}>I learned programming by developing for Minecraft when I was younger. Here are some of the things I created, most of them are discontinued and they are all coded in Java.</p>
+
+                            <div className="projects-grid" style={{ marginTop: "15px" }}>
                                 <ProjectCard
                                     name="Benchkit"
                                     url="/projects/minecraft/benchkit"
@@ -181,7 +193,7 @@ export default function Index() {
                         <div className={styles.jimmiesGallery}>
                             <ImageGallery imagesInfoArray={jimmiesDesigns} />
                         </div>
-                        
+
                         <h3 className={styles.gallerySubheading}>The Mary Rose</h3>
                         <div className={styles.maryRoseGallery}>
                             <ImageGallery imagesInfoArray={maryRoseDesigns} />

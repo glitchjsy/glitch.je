@@ -139,6 +139,7 @@ h2 {
     flex-wrap: wrap;
     /* grid-template-columns: auto auto auto auto auto; */
     gap: 20px;
+    margin-top: 10px;
 }
 
 .project-card {
@@ -304,11 +305,7 @@ h2 {
 
 .old-projects {
     color: white;
-    margin-top: 30px;
-}
-
-.old-projects h3 {
-    font-size: 26px;
+    margin-top: 60px;
 }
 
 .old-projects .project-card {
