@@ -4,10 +4,10 @@ import { FiGithub, FiGlobe } from "react-icons/fi";
 export default function ProjectOpenData() {
     return (
         <ProjectPage
-            name="Jersey Open Data"
+            name="OpenData.je"
             category="Website"
             status="Active"
-            summary="Jersey Open Data is a project dedicated to making open data from Jersey, Channel Islands, easily accessible and developer-friendly."
+            summary="OpenData.je is a project dedicated to making open data from Jersey, Channel Islands, easily accessible and developer-friendly."
             created="February 2023"
             openSource
             technologies={[
@@ -21,7 +21,7 @@ export default function ProjectOpenData() {
                 "chatgpt"
             ]}
             links={[
-                { text: "Website", icon: <FiGlobe />, href: "https://data.gltch.je" },
+                { text: "Website", icon: <FiGlobe />, href: "https://opendata.je" },
                 { text: "Frontend Source Code", icon: <FiGithub />, href: "https://github.com/glitchjsy/data-frontend" },
                 { text: "API Source Code", icon: <FiGithub />, href: "https://github.com/glitchjsy/data-api" },
                 { text: "Data Fetcher Source Code", icon: <FiGithub />, href: "https://github.com/glitchjsy/data-fetcher" }
@@ -42,7 +42,7 @@ export default function ProjectOpenData() {
             </div>
 
             <br />
-            <a href="https://data.glitch.je/about" target="_blank">Learn more</a>
+            <a href="https://opendata.je/about" target="_blank">Learn more</a>
         </ProjectPage>
     )
 }

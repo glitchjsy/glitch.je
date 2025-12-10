@@ -1,20 +1,24 @@
 export const jimmiesDesigns = [
     {
+        id: "the-club-room-poster",
+        alt: "The club room",
+        src: "/imagesold/design/stjames/TheClubRoom.png"
+    },
+    {
         id: "weekly-entertainment-poster",
         alt: "Weekly entertainment poster",
         caption: "Weekly entertainment at St James",
         src: "/imagesold/design/stjames/DoorPosterEntertainment.png"
     },
     {
-        id: "spiking-poster",
-        alt: "Think you've been spiked poster",
-        src: "/imagesold/design/stjames/SpikingPoster.png"
+        id: "halloween-fb-cover-2025",
+        alt: "Halloween facebook cover",
+        src: "/imagesold/design/stjames/HalloweenFacebookCover.png"
     },
     {
-        id: "gerry-calisto-ad-1",
-        alt: "Gerry calisto advert",
-        caption: "Facebook advert for DJ",
-        src: "/imagesold/design/stjames/GerryCalistoAd.png"
+        id: "fancy-a-shot-tv",
+        alt: "Fancy a shot TV",
+        src: "/imagesold/design/stjames/FancyAShotTV.png"
     },
     {
         id: "dress-code-poster",
@@ -70,6 +74,11 @@ export const jimmiesDesigns = [
         id: "shot-list-card",
         alt: "Shot list card",
         src: "/imagesold/design/stjames/ShotList.png"
+    },
+    {
+        id: "dress-code-tv",
+        alt: "Dress code TV",
+        src: "/imagesold/design/stjames/DressCodeTV.png"
     },
     {
         id: "jager-paddle-story-ad",
