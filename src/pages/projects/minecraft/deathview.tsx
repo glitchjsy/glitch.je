@@ -1,3 +1,4 @@
+import { DownloadCount } from "@/components/DownloadCount";
 import ProjectPage from "@/components/ProjectPage";
 import { FiDownload, FiGithub, FiGlobe } from "react-icons/fi";
 
@@ -21,7 +22,12 @@ export default function ProjectDeathView() {
             ]}
         >
             <p>A simple plugin I based off of a feature from the Mineplex Minecraft server. Versions are available for both Minecraft: Java Editon and Minecraft: Bedrock Edition.</p>
-            <p><strong>Downloads:</strong> 3500+ (<a href="https://cloudburstmc.org/resources/deathview.396" target="_blank">source</a>)</p>
+
+            <DownloadCount
+                count="4200+"
+                lastChecked="March 2026"
+                source="https://cloudburstmc.org/resources/deathview.396"
+            />
         </ProjectPage>
     )
 }

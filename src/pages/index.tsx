@@ -5,15 +5,18 @@ import ProjectCard from "@/components/ProjectCard";
 import { ImageGallery } from "react-image-grid-gallery";
 import { jimmiesDesigns, maryRoseDesigns } from "@/designs";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function Index() {
     return (
         <body id="homepage-body">
+            {/* <Navbar transparent /> */}
+
             <div className="main">
                 <div className="hero-section">
                     <div className={styles.container}>
                         <h1 className="name">Luke Wyatt</h1>
-                        <p className="bio">Web Developer & IT Technician from Jersey, Channel Islands.</p>
+                        <p className="bio">Web Developer from Jersey, Channel Islands.</p>
 
                         <div className={styles.socialLinks}>
                             <SocialLink href="https://linkedin.com/in/lukejwyatt" icon={<FaLinkedin color="white" />} />
@@ -22,11 +25,11 @@ export default function Index() {
                         </div>
                     </div>
                 </div>
-                <div className="about-section">
+                <div id="about" className="about-section">
                     <div className={styles.container}>
                         <h2 className="about-title">About me</h2>
                         <p>
-                            Hello! I'm a 22-year-old Web Developer and IT Technician based in Jersey, Channel Islands.
+                            Hello! I'm a 23-year-old Web Developer based in Jersey, Channel Islands.
                         </p>
                         <p>
                             I'm a team-focused, hands-on indivdual with a strong work ethic and genuine enthusiasm for everything IT. My IT journey began at the
@@ -37,12 +40,15 @@ export default function Index() {
                             In late 2024, I joined C5 Alliance as an IT Technician where I've gained valuable experience with backend systems and learned a great deal about working in a corporate environment.
                         </p>
                         <p>
+                            In February of 2025, I moved to become a Junior Applications Consultant at C5 Alliance.
+                        </p>
+                        <p>
                             Outside of work, I enjoy coding and building personal projects, as well as exploring photography, graphic design, and DJing (though I'm not very good!)
                         </p>
                         <Technologies />
                     </div>
                 </div>
-                <div className="projects-section">
+                <div id="projects" className="projects-section">
                     <div className={styles.container}>
                         <h2 className="projects-title">Projects</h2>
                         <h3 className={styles.projectCategoryHeading}>Websites</h3>
@@ -58,20 +64,20 @@ export default function Index() {
                                 url="/projects/open-data"
                                 imageUrl="/imagesold/projects/opendata.png"
                             />
-                            <ProjectCard
+                            {/* <ProjectCard
                                 name="HackJSY"
                                 url="/projects/hackjsy"
                                 imageUrl="/imagesold/projects/hackjsy.png"
-                            />
+                            /> */}
                             <ProjectCard
-                                name="HappyHour.je"
-                                url="/projects/happyhour.je"
-                                imageUrl="/imagesold/projects/happyhour.png"
-                            />
-                            <ProjectCard
-                                name="St James TV System"
+                                name="Nightclub TV System"
                                 url="/projects/stjames-tvs"
                                 imageUrl="/imagesold/projects/stjames-tvs.png"
+                            />
+                            <ProjectCard
+                                name="St James Website"
+                                url="/projects/stjames"
+                                imageUrl="/imagesold/projects/stjames-website.png"
                             />
                             <ProjectCard
                                 name="HitCount.dev"
@@ -87,6 +93,11 @@ export default function Index() {
                                 name="SaveTheFort.je"
                                 url="/projects/savethefort"
                                 imageUrl="/imagesold/projects/savethefort.png"
+                            />
+                            <ProjectCard
+                                name="HappyHour.je"
+                                url="/projects/happyhour.je"
+                                imageUrl="/imagesold/projects/happyhour.png"
                             />
                             <ProjectCard
                                 name="QR Code Generator"
@@ -178,7 +189,7 @@ export default function Index() {
                         </div>
                     </div>
                 </div>
-                <div className="design-section">
+                <div id="design" className="design-section">
                     <div className={styles.container}>
                         <h2 className="design-title">Designs</h2>
                         <p className="design-subtitle">

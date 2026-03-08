@@ -1,0 +1,162 @@
+.header {
+    --scrolled-background: white;
+    --link: #6b7280;
+    --link-hover: #111827;
+    --logo: #111827;
+    --border: #e5e7eb;
+}
+
+@media (prefers-color-scheme: dark) {
+    .header {
+        --scrolled-background: black;
+        --link: white;
+        --link-hover: #d6d7d7;
+        --logo: white;
+        --border: black;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transition: all 0.3s ease;
+    background-color: var(--scrolled-background);
+}
+
+.scrolled {
+    background-color: var(--scrolled-background);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--scrolled-background);
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--logo);
+}
+
+.logo:hover {
+    color: #2563eb;
+}
+
+.desktopNav {
+    display: none;
+    gap: 2.5rem;
+}
+
+.desktopSocial {
+    display: none;
+    gap: 1.25rem;
+}
+
+.navLink {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--link);
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: var(--link-hover);
+}
+
+.active {
+    color: #111827;
+}
+
+.socialLink {
+    color: var(--link);
+}
+
+.socialLink:hover {
+    color: var(--link-hover);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--logo);
+}
+
+.menuIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.mobileMenu {
+    border-bottom: 1px solid var(--border);
+    background-color: var(--scrolled-background);
+}
+
+.mobileMenuInner {
+    padding: 1rem 1.5rem;
+}
+
+.mobileNavLink {
+    display: block;
+    font-weight: 500;
+    color: var(--link);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.mobileSocial {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--link);
+}
+
+@media (min-width: 768px) {
+    .nav {
+        background-color: transparent;
+    }
+
+    .light,
+    .light .logo,
+    .light .socialLink,
+    .light .navLink {
+        color: white;
+    }
+
+    .light {
+        background: transparent;
+    }
+
+    .desktopNav {
+        display: flex;
+    }
+
+    .desktopSocial {
+        display: flex;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: none;
+    }
+}

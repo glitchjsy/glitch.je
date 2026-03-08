@@ -3,12 +3,15 @@ import styles from "./styles.module.css";
 import clsx from "@/clsx";
 import Footer from "../Footer";
 import Header from "../Header";
+import Navbar from "../Navbar";
 
 type ProjectCategory = "Website" | "Console Application" | "Minecraft Server Plugin" | "Java Library" | "Java Program" | "Chrome Extension" | string;
 
 type ProjectStatus = "Active" | "Inactive" | "Maintained" | "Abandoned" | "Discontinued";
 
 type Technology = "typescript" | "javascript" | "html" | "css" | "react" | "nextjs" | "react-native" | "mysql" | "nodejs" | "nginx" | "redis" | "maven" | "websocket" | "gradle" | "mongo" | "docusaurus" | "mapbox" | "expressjs" | "chartjs" | "chatgpt" | "java" | "chakra-ui" | "mailtrap";
+
+type Type = "Client Work" | "Personal Project";
 
 interface Props {
     name: string;
@@ -19,6 +22,8 @@ interface Props {
     created?: string;
     technologies: Technology[];
     links?: Link[];
+    icon?: string;
+    type?: Type;
 }
 
 interface Link {
@@ -143,7 +148,7 @@ export default function ProjectPage({ children, ...props }: PropsWithChildren<Pr
 
     return (
         <div className={styles.main}>
-            <Header />
+            <Navbar />
 
             <div className={clsx("container", styles.content)}>
                 <div className={styles.pageGrid}>
@@ -158,9 +163,12 @@ export default function ProjectPage({ children, ...props }: PropsWithChildren<Pr
                         <>
                             <div className="row">
                                 <div className="col-8">
-                                    <div className={styles.desktopHeader}>
-                                        <h2 className={styles.pageTitle}>{props.name}</h2>
-                                        <div>{props.summary}</div>
+                                    <div className={clsx(styles.desktopHeader, props.icon ? styles.desktopHeaderFlex : "")}>
+                                        {props.icon && <img className={styles.icon} src={props.icon} />}
+                                        <div>
+                                            <h2 className={styles.pageTitle}>{props.name}</h2>
+                                            <div>{props.summary}</div>
+                                        </div>
                                     </div>
                                     {children && <h3 className={styles.moreInfo}>Description</h3>}
                                     <ProjectContent children={children} />

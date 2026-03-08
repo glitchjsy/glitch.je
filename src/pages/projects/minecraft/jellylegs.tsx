@@ -1,3 +1,4 @@
+import { DownloadCount } from "@/components/DownloadCount";
 import ProjectPage from "@/components/ProjectPage";
 import { FiDownload, FiGithub } from "react-icons/fi";
 
@@ -22,7 +23,11 @@ export default function ProjectJellyLegs() {
             <p>This plugin is a stupidly simple recreation of the Jelly Legs feature that was seen on Minecraft Faction servers.</p>
             <p>It allows you to disable fall damage for yourself or others with a simple command, making it a great donator perk in-game.</p>
 
-            <p><strong>Downloads:</strong> 1200+ (<a href="https://cloudburstmc.org/resources/jellylegs.663" target="_blank">source</a>)</p>
+            <DownloadCount
+                count="1500+"
+                lastChecked="March 2026"
+                source="https://cloudburstmc.org/resources/jellylegs.663"
+            />
         </ProjectPage>
     )
 }

@@ -1,3 +1,4 @@
+import { DownloadCount } from "@/components/DownloadCount";
 import ProjectPage from "@/components/ProjectPage";
 import { FiDownload, FiGithub } from "react-icons/fi";
 
@@ -22,7 +23,11 @@ export default function ProjectPerWorldInventory() {
             <p>This plugin is a ported from the PocketMine-MP plugin <a href="https://github.com/BlockHorizons/PerWorldInventory" target="_blank">PerWorldInventory</a> by BlockHorizons, by request on the CloudburstMC forums.</p>
             <p>The plugin allows you to have a separate inventory for each world as well as share the inventories of multiple worlds by configuring it in the config.yml file.</p>
 
-            <p><strong>Downloads:</strong> 1500+ (<a href="https://cloudburstmc.org/resources/perworldinventory.659" target="_blank">source</a>)</p>
+            <DownloadCount
+                count="1800+"
+                lastChecked="March 2026"
+                source="https://cloudburstmc.org/resources/perworldinventory.659"
+            />
         </ProjectPage>
     )
 }

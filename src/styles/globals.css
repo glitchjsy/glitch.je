@@ -382,3 +382,13 @@ h2 {
         justify-content: center;
     }
 }
+
+.project-demo-image-limit {
+    max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .project-demo-image-limit {
+        max-width: 100%;
+    }   
+}

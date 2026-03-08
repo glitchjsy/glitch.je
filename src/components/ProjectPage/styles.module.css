@@ -4,8 +4,18 @@
     min-height: 100vh;
 }
 
+.hero {
+    background-image: url(/images/dreaming-trees.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
 .content {
     flex: 1;
+    margin-top: 110px;
 }
 
 .pageGrid {
@@ -75,8 +85,14 @@
     border-bottom: 1px solid #ececec;
 }
 
-.deskopHeaderFlex {
+.desktopHeaderFlex {
     display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.icon {
+
 }
 
 .pageSummaryMobile {
@@ -109,6 +125,12 @@
 .projectLinks {
     display: flex;
     flex-direction: column;
+}
+
+.projectLinks a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .projectLinks a:visited {

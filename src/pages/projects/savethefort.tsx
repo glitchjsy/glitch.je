@@ -16,7 +16,7 @@ export default function ProjectSaveTheFort() {
                 "css"
             ]}
             links={[
-                { text: "Website", icon: <FiGlobe />, href: "https://savethefort.je" },
+                // { text: "Website", icon: <FiGlobe />, href: "https://savethefort.je" },
                 { text: "GitHub Repository", icon: <FiGithub />, href: "https://github.com/lukeeey/savethefort" }
             ]}
         >

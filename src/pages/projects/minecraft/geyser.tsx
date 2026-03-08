@@ -7,6 +7,7 @@ export default function ProjectGeyserMC() {
         <ProjectPage
             name="Geyser"
             category="Java Program"
+            icon="/imagesold/logos/geyser-icon.png"
             status="Active"
             summary="Geyser is a bridge between Minecraft: Bedrock Edition and Minecraft: Java Edition, closing the gap from those wanting to play true cross-platform."
             openSource
@@ -38,19 +39,19 @@ export default function ProjectGeyserMC() {
 
             <br /><br />
 
-            <h3>Statistics (as of Sep 2025)</h3>
+            <h3>Statistics (as of March 2026)</h3>
 
             <h4 style={{ color: "red", textDecoration: "underline" }}>Geyser only</h4>
-            <div><strong>GitHub Stars:</strong> 5200+</div>
-            <div><strong>Repo Forks:</strong> 750+</div>
-            <div><strong>Pull Requests:</strong> 1700+</div>
-            <div><strong>Total Instances:</strong> 37,000+</div>
+            <div><strong>GitHub Stars:</strong> 5500+</div>
+            <div><strong>Repo Forks:</strong> 800+</div>
+            <div><strong>Pull Requests:</strong> 1900+</div>
+            <div><strong>Total Instances:</strong> 58,000+</div>
 
             <br />
             <h4 style={{ color: "red", textDecoration: "underline" }}>Entire organisation</h4>
-            <div><strong>Discord Members:</strong> 39,000+</div>
-            <div><strong>GitHub Repos:</strong> 64</div>
-            <div><strong>Total Donations:</strong> $9,247.40 <em>(21/09/25)</em></div>
+            <div><strong>Discord Members:</strong> 45,000+</div>
+            <div><strong>GitHub Repos:</strong> 66</div>
+            <div><strong>Total Donations:</strong> $10,543.23 <em>(08/03/26)</em></div>
         </ProjectPage>
     )
 }
