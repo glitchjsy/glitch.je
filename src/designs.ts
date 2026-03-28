@@ -117,5 +117,10 @@ export const maryRoseDesigns = [
         id: "mary-rose-shot-deals",
         alt: "Mary Rose shot deals story",
         src: "/imagesold/design/maryrose/ShotDealsStory.png"
+    },
+    {
+        id: "mary-rose-facebook-cover",
+        alt: "Mary Rose facebook cover",
+        src: "/imagesold/design/maryrose/FbCover.png"
     }
 ];

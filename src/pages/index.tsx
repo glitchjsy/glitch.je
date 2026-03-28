@@ -29,7 +29,7 @@ export default function Index() {
                     <div className={styles.container}>
                         <h2 className="about-title">About me</h2>
                         <p>
-                            Hello! I'm a 23-year-old Web Developer based in Jersey, Channel Islands.
+                            Hello! I'm a 23-year-old Web Developer & Junior Consultant at C5 Alliance based in Jersey, Channel Islands.
                         </p>
                         <p>
                             I'm a team-focused, hands-on indivdual with a strong work ethic and genuine enthusiasm for everything IT. My IT journey began at the
@@ -78,6 +78,11 @@ export default function Index() {
                                 name="St James Website"
                                 url="/projects/stjames"
                                 imageUrl="/imagesold/projects/stjames-website.png"
+                            />
+                             <ProjectCard
+                                name="The Mary Rose Website"
+                                url="/projects/themaryrose"
+                                imageUrl="/imagesold/projects/maryrose-website.png"
                             />
                             <ProjectCard
                                 name="HitCount.dev"
@@ -202,7 +207,7 @@ export default function Index() {
 
                         <h3 className={styles.gallerySubheading}>St James</h3>
                         <div className={styles.jimmiesGallery}>
-                            <ImageGallery imagesInfoArray={jimmiesDesigns} />
+                            <ImageGallery imagesInfoArray={jimmiesDesigns}/>
                         </div>
 
                         <h3 className={styles.gallerySubheading}>The Mary Rose</h3>
