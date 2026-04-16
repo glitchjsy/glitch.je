@@ -6,6 +6,27 @@ import { ImageGallery } from "react-image-grid-gallery";
 import { jimmiesDesigns, maryRoseDesigns } from "@/designs";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ProjectListItem from "@/components/ProjectListItem";
+import happyhourJe from "@/projects/2025/happyhour-je";
+import savethefortJe from "@/projects/2025/savethefort-je";
+import qrcodeGenerator from "@/projects/2024/qrcode-generator";
+import stjamesWebsite from "@/projects/2026/stjames-website";
+import maryroseWebsite from "@/projects/2026/maryrose-website";
+import hitcountDev from "@/projects/2025/hitcount-dev";
+import clip from "@/projects/2024/clip";
+import nightclubTvSystem from "@/projects/2024/nightclub-tv-system";
+import opendataJe from "@/projects/2023/opendata-je";
+import dutyCalculator from "@/projects/2023/duty-calculator";
+import andiumChecker from "@/projects/2023/andium-checker";
+import benchkit from "@/projects/2021/benchkit";
+import cloudforms from "@/projects/2021/cloudforms";
+import discordrelay from "@/projects/2021/discordrelay";
+import factionsmongo from "@/projects/2021/factionsmongo";
+import jellylegs from "@/projects/2021/jellylegs";
+import perworldinventory from "@/projects/2021/perworldinventory";
+import geyser from "@/projects/2020/geyser";
+import deathview from "@/projects/2020/deathview";
+import dragonproxy from "@/projects/2019/dragonproxy";
 
 export default function Index() {
     return (
@@ -51,9 +72,20 @@ export default function Index() {
                 <div id="projects" className="projects-section">
                     <div className={styles.container}>
                         <h2 className="projects-title">Projects</h2>
-                        <h3 className={styles.projectCategoryHeading}>Websites</h3>
+                        <p className={styles.projectsSubtitle}>
+                            This section contains a large number of projects, big and small, that I have worked on over the years. Click a project for more information.
+                        </p>
+                        <h3 className={styles.projectCategoryHeading}>Featured</h3>
+                        <p className={styles.projectCategorySubheading}>
+                            This is some of the work I'm most proud of.
+                        </p>
 
                         <div className="projects-grid">
+                            <ProjectCard
+                                name="ThreatHub"
+                                url="/projects/threathub"
+                                imageUrl="/imagesold/projects/threathub.png"
+                            />
                             <ProjectCard
                                 name="Basket.je"
                                 url="/projects/basket.je"
@@ -61,17 +93,12 @@ export default function Index() {
                             />
                             <ProjectCard
                                 name="Jersey Open Data"
-                                url="/projects/open-data"
+                                url="/projects/opendata.je"
                                 imageUrl="/imagesold/projects/opendata.png"
                             />
-                            {/* <ProjectCard
-                                name="HackJSY"
-                                url="/projects/hackjsy"
-                                imageUrl="/imagesold/projects/hackjsy.png"
-                            /> */}
                             <ProjectCard
                                 name="Nightclub TV System"
-                                url="/projects/stjames-tvs"
+                                url="/projects/nightclub-advert-system"
                                 imageUrl="/imagesold/projects/stjames-tvs.png"
                             />
                             <ProjectCard
@@ -79,135 +106,115 @@ export default function Index() {
                                 url="/projects/stjames"
                                 imageUrl="/imagesold/projects/stjames-website.png"
                             />
-                             <ProjectCard
+                            <ProjectCard
                                 name="The Mary Rose Website"
                                 url="/projects/themaryrose"
                                 imageUrl="/imagesold/projects/maryrose-website.png"
                             />
-                            <ProjectCard
-                                name="HitCount.dev"
-                                url="/projects/hitcount.dev"
-                                imageUrl="/imagesold/projects/hitcount.png"
+                        </div>
+
+                        <div style={{ marginTop: "40px" }}>
+                            <h3 className={styles.projectCategoryHeading}>Previous Projects</h3>
+                            <p className={styles.projectCategorySubheading}></p>
+                        </div>
+
+                        <div className={styles.minorProjectsGrid}>
+                            <ProjectListItem
+                                {...savethefortJe}
+                                url="/projects/savethefort.je"
                             />
-                            <ProjectCard
-                                name="Clip"
+                            <ProjectListItem
+                                {...clip}
                                 url="/projects/clip"
-                                imageUrl="/imagesold/projects/clip.png"
                             />
-                            <ProjectCard
-                                name="SaveTheFort.je"
-                                url="/projects/savethefort"
-                                imageUrl="/imagesold/projects/savethefort.png"
-                            />
-                            <ProjectCard
-                                name="HappyHour.je"
+                            <ProjectListItem
+                                {...happyhourJe}
                                 url="/projects/happyhour.je"
-                                imageUrl="/imagesold/projects/happyhour.png"
-                            />
-                            <ProjectCard
-                                name="QR Code Generator"
-                                url="/projects/qrcode"
-                                imageUrl="/imagesold/projects/qrcode.png"
                             />
                         </div>
 
-                        {/* <div className="old-projects">
-                            <h3 className={styles.projectCategoryHeading}>Miscellaneous (open source)</h3>
-                            <p className={styles.projectCategorySummary}>These are Chrome Extensions, Scripts or Console Applications that I've created.</p>
+                        <div style={{ marginTop: "40px" }}>
+                            <h3 className={styles.projectCategoryHeading}>Playground</h3>
+                            <p className={styles.projectCategorySubheading}>
+                                These are small projects that I created either as a proof-of-concept, as practice, or to solve a specfic problem.
+                            </p>
+                        </div>
 
-                            <div className="projects-grid">
-                                <ProjectCard
-                                    name="Excise Duty Calculator"
-                                    url="/projects/duty-calculator"
-                                    imageUrl="/images/projects/dutycalc/home.png"
-                                    smaller
-                                />
-                                <ProjectCard
-                                    name="Andium Properties Checker"
-                                    url="/projects/andium-checker"
-                                    imageUrl="/images/projects/andium-checker/home.png"
-                                    smaller
-                                />
-                            </div>
-                        </div> */}
+                        <div className={styles.minorProjectsGrid}>
+                            <ProjectListItem
+                                {...qrcodeGenerator}
+                                url="/projects/qrcode-generator"
+                            />
+                            <ProjectListItem
+                                {...dutyCalculator}
+                                url="/projects/duty-calculator"
+                            />
+                            <ProjectListItem
+                                {...andiumChecker}
+                                url="/projects/andium-checker"
+                            />
+                        </div>
 
-                        <div className="old-projects">
-                            <h3 className={styles.projectCategoryHeading}>Old Minecraft Projects</h3>
-                            <p className={styles.projectCategorySummary}>I learned programming by developing for Minecraft when I was younger. Here are some of the things I created, most of them are discontinued and they are all coded in Java.</p>
+                        <div style={{ marginTop: "40px" }}>
+                            <h3 className={styles.projectCategoryHeading}>Minecraft</h3>
+                            <p className={styles.projectCategorySubheading}>
+                                I learned programming by developing for Minecraft when I was younger. Here are some of the things I created, most of them are discontinued and they are all coded in Java.
+                                I still update some of them on occasion.
+                            </p>
+                        </div>
 
-                            <div className="projects-grid" style={{ marginTop: "15px" }}>
-                                <ProjectCard
-                                    name="Benchkit"
-                                    url="/projects/minecraft/benchkit"
-                                    imageUrl="/imagesold/projects/benchkit.png"
-                                    smaller
-                                />
-                                <ProjectCard
-                                    name="Discord Relay"
-                                    url="/projects/minecraft/discordrelay"
-                                    imageUrl="/imagesold/projects/discordrelay.png"
-                                    smaller
-                                />
-                                <ProjectCard
-                                    name="Geyser"
-                                    url="/projects/minecraft/geyser"
-                                    imageUrl="/imagesold/projects/geysermc.png"
-                                    smaller
-                                />
-                                <ProjectCard
-                                    name="DeathView"
-                                    url="/projects/minecraft/deathview"
-                                    imageUrl="/imagesold/projects/deathview.png"
-                                    smaller
-                                />
-                                <ProjectCard
-                                    name="CloudForms"
-                                    url="/projects/minecraft/cloudforms"
-                                    imageUrl="/imagesold/projects/cloudforms.png"
-                                    smaller
-                                />
-                                <ProjectCard
-                                    name="DragonProxy"
-                                    url="/projects/minecraft/dragonproxy"
-                                    imageUrl="/imagesold/projects/dragonproxy.png"
-                                    smaller
-                                />
-                                <ProjectCard
-                                    name="Factions MongoDB"
-                                    url="/projects/minecraft/factionsmongo"
-                                    imageUrl="/imagesold/projects/factionsmongo.png"
-                                    smaller
-                                />
-                                <ProjectCard
-                                    name="PerWorldInventory"
-                                    url="/projects/minecraft/perworldinventory"
-                                    imageUrl="/imagesold/projects/perworldinventory.png"
-                                    smaller
-                                />
-                                <ProjectCard
-                                    name="JellyLegs"
-                                    url="/projects/minecraft/jellylegs"
-                                    imageUrl="/imagesold/projects/jellylegs.png"
-                                    smaller
-                                />
-                            </div>
+                        <div className={styles.minorProjectsGrid}>
+                            <ProjectListItem
+                                {...discordrelay}
+                                url="/projects/minecraft/discordrelay"
+                            />
+                            <ProjectListItem
+                                {...jellylegs}
+                                url="/projects/minecraft/jellylegs"
+                            />
+                            <ProjectListItem
+                                {...perworldinventory}
+                                url="/projects/minecraft/perworldinventory"
+                            />
+                            <ProjectListItem
+                                {...deathview}
+                                url="/projects/minecraft/deathview"
+                            />
+                            <ProjectListItem
+                                {...benchkit}
+                                url="/projects/minecraft/benchkit"
+                            />
+                            <ProjectListItem
+                                {...cloudforms}
+                                url="/projects/minecraft/cloudforms"
+                            />
+                            <ProjectListItem
+                                {...factionsmongo}
+                                url="/projects/minecraft/factionsmongo"
+                            />
+                            <ProjectListItem
+                                {...geyser}
+                                url="/projects/minecraft/geyser"
+                            />
+                            <ProjectListItem
+                                {...dragonproxy}
+                                url="/projects/minecraft/dragonproxy"
+                            />
                         </div>
                     </div>
                 </div>
+
                 <div id="design" className="design-section">
                     <div className={styles.container}>
                         <h2 className="design-title">Designs</h2>
                         <p className="design-subtitle">
-                            I'm not a professional designer, but I'm proud of these designs and wanted to share them.
-                        </p>
-                        <p className="design-subtitle">
-                            I created them for <a href="https://facebook.com/StJamesSportsBar" target="_blank">St James</a> and <a href="https://facebook.com/TheMaryRoseJersey" target="_blank">The Mary Rose</a> to be used as posters, social media posts, and on-screen adverts.
+                            I created these designs for <a href="https://facebook.com/StJamesSportsBar" target="_blank">St James</a> and <a href="https://facebook.com/TheMaryRoseJersey" target="_blank">The Mary Rose</a> to be used as posters, social media posts, and on-screen adverts.
                             I continue to create new adverts each week for social media.
                         </p>
 
                         <h3 className={styles.gallerySubheading}>St James</h3>
                         <div className={styles.jimmiesGallery}>
-                            <ImageGallery imagesInfoArray={jimmiesDesigns}/>
+                            <ImageGallery imagesInfoArray={jimmiesDesigns} />
                         </div>
 
                         <h3 className={styles.gallerySubheading}>The Mary Rose</h3>
@@ -218,7 +225,7 @@ export default function Index() {
                 </div>
                 <Footer />
             </div>
-        </body>
+        </body >
     )
 }
 

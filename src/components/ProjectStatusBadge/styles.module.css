@@ -1,0 +1,27 @@
+.badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid;
+    margin-top: 5px;
+}
+
+.active {
+    background-color: #278542;
+    color: #ffffff;
+    border-color: #278542;
+}
+
+.inactive {
+    background-color: #46525f;
+    color: #ffffff;
+    border-color: #46525f;
+}
+
+.abandoned {
+    background-color: #691d1d;
+    color: #ffffff;
+    border-color: #691d1d;
+}

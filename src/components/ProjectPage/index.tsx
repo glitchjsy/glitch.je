@@ -1,38 +1,11 @@
-import { PropsWithChildren, useEffect, useState } from "react";
-import styles from "./styles.module.css";
 import clsx from "@/clsx";
+import { Project, ProjectTechnology } from "@/models/Project";
+import { PropsWithChildren, useEffect, useState } from "react";
 import Footer from "../Footer";
-import Header from "../Header";
 import Navbar from "../Navbar";
+import styles from "./styles.module.css";
 
-type ProjectCategory = "Website" | "Console Application" | "Minecraft Server Plugin" | "Java Library" | "Java Program" | "Chrome Extension" | string;
-
-type ProjectStatus = "Active" | "Inactive" | "Maintained" | "Abandoned" | "Discontinued";
-
-type Technology = "typescript" | "javascript" | "html" | "css" | "react" | "nextjs" | "react-native" | "mysql" | "nodejs" | "nginx" | "redis" | "maven" | "websocket" | "gradle" | "mongo" | "docusaurus" | "mapbox" | "expressjs" | "chartjs" | "chatgpt" | "java" | "chakra-ui" | "mailtrap";
-
-type Type = "Client Work" | "Personal Project";
-
-interface Props {
-    name: string;
-    summary: string;
-    category: ProjectCategory;
-    openSource?: boolean;
-    status: ProjectStatus;
-    created?: string;
-    technologies: Technology[];
-    links?: Link[];
-    icon?: string;
-    type?: Type;
-}
-
-interface Link {
-    text: string;
-    icon: any;
-    href: string;
-}
-
-const technologies: Record<Technology, { name: string; icon: string }> = {
+const technologies: Record<ProjectTechnology, { name: string; icon: string }> = {
     typescript: {
         name: "TypeScript",
         icon: "/imagesold/logos/typescript.png"
@@ -124,6 +97,10 @@ const technologies: Record<Technology, { name: string; icon: string }> = {
     websocket: {
         name: "WebSocket",
         icon: "/imagesold/logos/websocket.png"
+    },
+    bootstrap: {
+        name: "Bootstrap",
+        icon: "/imagesold/logos/bootstrap.svg"
     }
 };
 
@@ -143,7 +120,7 @@ export function useIsMobile(breakpoint = 768) {
     return isMobile;
 }
 
-export default function ProjectPage({ children, ...props }: PropsWithChildren<Props>) {
+export default function ProjectPage({ children, ...props }: PropsWithChildren<Project>) {
     const isMobile = useIsMobile();
 
     return (
@@ -195,7 +172,7 @@ function ProjectContent({ children }: PropsWithChildren) {
     )
 }
 
-function ProjectSidebar(props: Props) {
+function ProjectSidebar(props: Project) {
     return (
         <div className={styles.sidebar}>
             <div>
@@ -236,7 +213,7 @@ function ProjectSidebar(props: Props) {
                     <div className={styles.projectLinks}>
                         {props.links.map((link, i) => (
                             <a key={i} href={link.href} target="_blank">
-                                {link.icon} {link.text}
+                                {<link.icon />} {link.text}
                             </a>
                         ))}
                     </div>

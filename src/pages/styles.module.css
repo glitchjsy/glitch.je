@@ -16,13 +16,13 @@
     border-bottom: 1px solid #ececec;
 }
 
-.maryRoseGallery>div {
+.maryRoseGallery > div {
     column-width: 230px !important;
     column-count: auto !important;
     column-gap: 24px !important;
 }
 
-.maryRoseGallery>div>button {
+.maryRoseGallery > div > button {
     break-inside: avoid;
     display: block;
     width: 100%;
@@ -39,13 +39,37 @@
     padding-top: 10px;
 }
 
+.projectsSubtitle {
+    color: rgb(209, 209, 209);
+    margin-bottom: 20px;
+}
+
 .projectCategoryHeading {
     font-size: 26px;
     color: white;
 }
 
-.projectCategorySummary {
-    
+.projectCategorySubheading {
+    color: rgb(209, 209, 209);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.minorProjectsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projectYearHeading {
+    color: white;
+    margin-top: 20px;
+}
+
+.minorProjectsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -63,13 +87,17 @@
         justify-content: center;
     }
 
-    .maryRoseGallery>div {
+    .maryRoseGallery > div {
         column-width: 150px !important;
     }
 
-    .jimmiesGallery>div {
+    .jimmiesGallery > div {
         column-count: 2 !important;
         column-width: 150px !important;
         column-gap: 8px !important;
+    }
+
+    .minorProjectsGrid {
+        grid-template-columns: 1fr;
     }
 }

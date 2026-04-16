@@ -1,22 +1,9 @@
 import ProjectPage from "@/components/ProjectPage";
+import nightclubTvSystem from "@/projects/2024/nightclub-tv-system";
 
 export default function ProjectStJamesAdmin() {
     return (
-        <ProjectPage
-            name="Nightclub TV System"
-            category="Website & Android App"
-            status="Active"
-            summary=""
-            type="Client Work"
-            created="December 2024"
-            technologies={[
-                "java",
-                "websocket",
-                "javascript",
-                "react",
-                "chakra-ui"
-            ]}
-        >
+        <ProjectPage {...nightclubTvSystem}>
             <p>I built a system for local night club <a href="https://facebook.com/StJamesJsy" target="_blank">St James</a> & it's sister bar <a href="https://facebook.com/TheMaryRoseJersey" target="_blank">The Mary Rose</a> that allows them to control adverts or slideshows on each TV individually.</p>
             <p>This is done via an Android app that runs on a Fire TV stick and a web interface to administer everything.</p>
 

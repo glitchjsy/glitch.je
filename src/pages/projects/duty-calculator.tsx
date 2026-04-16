@@ -1,26 +1,10 @@
 import ProjectPage from "@/components/ProjectPage";
-import { FiGithub } from "react-icons/fi";
+import dutyCalculator from "@/projects/2023/duty-calculator";
 
 export default function ProjectDutyCalc() {
     return (
-        <ProjectPage
-            name="Excise Duty Calculator"
-            category="Chrome Extension"
-            status="Inactive"
-            summary="A simple chrome extension to calculate excise duty on cigarettes, tobacco and alcohol products."
-            created="April 2023"
-            openSource
-            technologies={[
-                "javascript",
-                "html",
-                "css"
-            ]}
-            links={[
-                { text: "GitHub Repository", icon: <FiGithub />, href: "https://github.com/glitchjsy/duty-calculator" }
-            ]}
-        >
-            <p>This project was created simply as practice with creating Chrome extensions, however I still update the duty prices each year.</p>
-            <p>It is not available in the Chrome Web Store and must be imported from source.</p>
+        <ProjectPage {...dutyCalculator}>
+            <p>This project was created simply as practice with creating Chrome extensions.</p>
 
             <img src="/images/projects/dutycalc/preview.png" style={{ maxWidth: "100%" }} />
 

@@ -1,30 +1,10 @@
 import { DownloadCount } from "@/components/DownloadCount";
 import ProjectPage from "@/components/ProjectPage";
-import { FiDownload, FiGithub, FiGlobe } from "react-icons/fi";
+import discordrelay from "@/projects/2021/discordrelay";
 
 export default function ProjectDiscordRelay() {
     return (
-        <ProjectPage
-            name="Discord Relay"
-            category="Minecraft Server Plugin"
-            status="Discontinued"
-            summary="A Minecraft server plugin for relaying chat between Discord and Minecraft."
-            created="March 2021"
-            openSource
-            technologies={[
-                "java",
-                "typescript",
-                "html",
-                "css",
-                "websocket",
-                "maven"
-            ]}
-            links={[
-                { text: "GitHub Repository", icon: <FiGithub />, href: "https://github.com/lukeeey/DiscordRelay" },
-                { text: "Download on CloudburstMC ", icon: <FiDownload />, href: "https://cloudburstmc.org/resources/discordrelay.667" },
-                { text: "Download on SpigotMC", icon: <FiDownload />, href: "https://www.spigotmc.org/resources/discordrelay.90263" }
-            ]}
-        >
+        <ProjectPage {...discordrelay}>
             <img src="https://user-images.githubusercontent.com/32024335/111518790-53ea6080-874e-11eb-9490-bfc2aeb7713c.png" style={{ maxWidth: "100%" }} />
             <br /><br />
 
@@ -42,8 +22,8 @@ export default function ProjectDiscordRelay() {
             <br />
 
             <DownloadCount
-                count="5200+"
-                lastChecked="March 2026"
+                count="5300+"
+                lastChecked="April 2026"
                 source="https://cloudburstmc.org/resources/discordrelay.667"
             />
 

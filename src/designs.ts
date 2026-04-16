@@ -122,5 +122,10 @@ export const maryRoseDesigns = [
         id: "mary-rose-facebook-cover",
         alt: "Mary Rose facebook cover",
         src: "/imagesold/design/maryrose/FbCover.png"
+    },
+     {
+        id: "mary-rose-quiz-nites",
+        alt: "Mary Rose quiz nights poster",
+        src: "/imagesold/design/maryrose/QuizNights.png"
     }
 ];

@@ -1,26 +1,9 @@
 import ProjectPage from "@/components/ProjectPage";
-import { AiFillDiscord } from "react-icons/ai";
-import { FiDownload, FiGithub, FiGlobe } from "react-icons/fi";
+import geyser from "@/projects/2020/geyser";
 
 export default function ProjectGeyserMC() {
     return (
-        <ProjectPage
-            name="Geyser"
-            category="Java Program"
-            icon="/imagesold/logos/geyser-icon.png"
-            status="Active"
-            summary="Geyser is a bridge between Minecraft: Bedrock Edition and Minecraft: Java Edition, closing the gap from those wanting to play true cross-platform."
-            openSource
-            technologies={[
-                "java",
-                "maven"
-            ]}
-            links={[
-                { text: "GitHub Repository", icon: <FiGithub />, href: "https://github.com/GeyserMC/Geyser" },
-                { text: "Website", icon: <FiGlobe />, href:"https://geysermc.org" },
-                { text: "Discord Server", icon: <AiFillDiscord />, href: "https://discord.gg/GeyserMC" }
-            ]}
-        >
+        <ProjectPage {...geyser}>
             <p>Geyser is the successor to <a href="/projects/minecraft/dragonproxy">DragonProxy</a>. I joined the team as a Project Lead in 2020 after it was acquired by CubeCraft Games (Ziax Ltd).</p>
 
             <p>I rarely work on the actual Geyser project, howver my notable contributes across the organisation as a whole are as follows:</p>

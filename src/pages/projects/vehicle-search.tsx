@@ -1,12 +1,12 @@
 import ProjectPage from "@/components/ProjectPage";
-import { FiGithub, FiGlobe } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 
 export default function ProjectVehicleSearch() {
     return (
         <ProjectPage
             name="Jersey Vehicle Search"
             category="Website"
-            status="Inactive"
+            status="Abandoned"
             summary="Web app to scan number plates and lookup the car info on gov.je"
             created="November 2023"
             openSource
@@ -18,7 +18,7 @@ export default function ProjectVehicleSearch() {
                 "css"
             ]}
             links={[
-                { text: "GitHub Repository", icon: <FiGithub />, href: "https://github.com/glitchjsy/vehicle-search" }
+                { text: "GitHub Repository", icon: FiGithub, href: "https://github.com/glitchjsy/vehicle-search" }
             ]}
         >
             <p>Currently being rewritten (slowly) in the <a href="https://github.com/glitchjsy/vehicle-search/tree/java-rewrite" target="_blank">java-rewrite</a> branch.</p>

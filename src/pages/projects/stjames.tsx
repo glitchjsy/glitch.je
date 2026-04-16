@@ -1,27 +1,9 @@
 import ProjectPage from "@/components/ProjectPage";
-import { LuGithub, LuGlobe } from "react-icons/lu";
+import stjamesWebsite from "@/projects/2026/stjames-website";
 
 export default function ProjectStJamesWebsite() {
     return (
-        <ProjectPage
-            name="St James Website"
-            category="Website"
-            status="Active"
-            summary=""
-            openSource
-            type="Client Work"
-            created="January 2026"
-            technologies={[
-                "javascript",
-                "react",
-                "html",
-                "css"
-            ]}
-            links={[
-                { text: "Website", href: "https://stjamesjersey.com", icon: <LuGlobe /> },
-                { text: "GitHub", href: "https://github.com/stjamesjsy/website", icon: <LuGithub /> }
-            ]}
-        >
+        <ProjectPage {...stjamesWebsite}>
             <p>I built a website for local night club <a href="https://facebook.com/StJamesJsy" target="_blank">St James</a> to support and faciliate bookings for the new Steak on the Stone, Sunday Lunch & Disco Bingo.  </p>
             <p>It includes a contact form for general enquiries and a form used for booking different events.</p>
 

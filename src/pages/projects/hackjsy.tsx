@@ -1,5 +1,5 @@
 import ProjectPage from "@/components/ProjectPage";
-import { FiGithub, FiGlobe } from "react-icons/fi";
+import { FiGlobe } from "react-icons/fi";
 
 export default function ProjectHackJsy() {
     return (
@@ -17,7 +17,7 @@ export default function ProjectHackJsy() {
                 "css"
             ]}
             links={[
-                { text: "Website (in progress)", icon: <FiGlobe />, href: "https://hackjsy.com" }
+                { text: "Website (in progress)", icon: FiGlobe, href: "https://hackjsy.com" }
             ]}
         >
             <p>I'm currently building HackJSY as a platform for Hackathon events.</p>
