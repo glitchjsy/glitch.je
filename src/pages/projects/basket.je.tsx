@@ -8,6 +8,12 @@ export default function ProjectBasketje() {
             <p>To make this possible, I created a system for effortlessly collectng prices using your smartphone while in the shop. I have also developed a native app using React Native that is yet to be released.</p>
 
             <img src="/images/projects/basketje/homepage.jpg" style={{ maxWidth: "100%" }} />
+
+            <br />
+            <br />
+            <p>
+               <a href="https://imgur.com/a/t53xLQy" target="_blank"> View screenshots of the admin site</a>
+            </p>
         </ProjectPage>
     )
 }
